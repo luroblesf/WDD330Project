@@ -1,0 +1,29 @@
+{
+  "name": "wdd330project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luroblesf/WDD330Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/luroblesf/WDD330Project/issues"
+  },
+  "homepage": "https://github.com/luroblesf/WDD330Project#readme",
+  "dependencies": {
+    "browser-sync": "^3.0.4",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
