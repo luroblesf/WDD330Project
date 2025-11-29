@@ -1,9 +1,9 @@
 import { loadHeaderFooter } from "./utils.mjs";
 
-document.addEventListener("DOMContentLoaded", async () => {
-    await loadHeaderFooter();
-    console.log("Header y Footer cargados dinámicamente");
+document.addEventListener("DOMContentLoaded", () => {
+  loadHeaderFooter();
 });
+
 
 import products from "./public/products.json" assert { type: "json" };
 
