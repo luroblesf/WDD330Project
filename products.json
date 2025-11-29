@@ -53,7 +53,7 @@
         "id": 8,
         "name": "Vinyl Record - Casino",
         "price": 39.99,
-        "image": "images/products/discoTwo.webp",
+        "image": "images/products/discoOne.webp",
         "description": "A vinyl record featuring the album 'Casino'."
     }
 ]
