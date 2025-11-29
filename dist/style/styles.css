@@ -453,6 +453,100 @@ input[type="text"]:focus {
     color: #0078d7;
 }
 
+#add-to-cart {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #2F5DD4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-to-cart:hover {
+    background: #2F5DD4;
+    transform: scale(1.05);
+}
+
+#add-to-cart:active {
+    background: #2F5DD4;
+    transform: scale(0.95);
+}
+
+#cart-count {
+  position: absolute;
+  top: -9px; 
+  right: -9px; 
+  background: rgb(255, 0, 0);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 60%;
+  min-width: 10px;
+  text-align: center;
+}
+ /* Cart Section */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+ }
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: box-shadow 0.2s ease;
+ }
+
+.cart-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ }
+
+.cart-item img {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 10px;
+ }
+
+.cart-item span {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    margin: 0 8px;
+ }
+
+.cart-item button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.2s ease;
+ }
+
+.cart-item button:hover {
+    background: #e63946;
+}
+
+#cart-count,
+#cart-total {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
 /* Search Bar */
 .search-form {
     display: flex;
