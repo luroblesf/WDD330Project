@@ -453,6 +453,44 @@ input[type="text"]:focus {
     color: #0078d7;
 }
 
+#add-to-cart {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #2F5DD4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-to-cart:hover {
+    background: #2F5DD4;
+    transform: scale(1.05);
+}
+
+#add-to-cart:active {
+    background: #2F5DD4;
+    transform: scale(0.95);
+}
+
+#cart-count {
+  position: absolute;
+  top: 38px; 
+  right: 53px; 
+  background: rgb(255, 0, 0);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 60%;
+  min-width: 10px;
+  text-align: center;
+}
+
+
 /* Search Bar */
 .search-form {
     display: flex;
