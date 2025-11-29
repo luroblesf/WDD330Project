@@ -1,11 +1,11 @@
-import { loadHeaderFooter } from "./utils.mjs";
+import { loadHeaderFooter } from "./public/utils.mjs";
 
 document.addEventListener("DOMContentLoaded", async () => {
     await loadHeaderFooter();
     console.log("Header y Footer cargados dinámicamente");
 });
 
-import products from "./products.json" assert { type: "json" };
+import products from "./public/products.json" assert { type: "json" };
 
 const container = document.querySelector(".products");
 

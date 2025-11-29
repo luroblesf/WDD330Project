@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const response = await fetch("../products.json");
+    const response = await fetch("/products.json");
     const products = await response.json();
 
     const params = new URLSearchParams(window.location.search);

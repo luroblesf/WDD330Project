@@ -4,7 +4,7 @@ async function loadProducts() {
   const container = document.querySelector(".products");
   container.innerHTML = "";
 
-  const response = await fetch("../products.json");
+  const response = await fetch("/products.json");
   const products = await response.json();
 
   const uniqueProductsMap = new Map();
