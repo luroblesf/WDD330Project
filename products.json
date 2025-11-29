@@ -44,7 +44,7 @@
     },
     {
         "id": 7,
-        "name": "Vinyl Record - Mala Famala",
+        "name": "Vinyl Record - Mala Fama",
         "price": 39.99,
         "image": "images/products/discoOne.webp",
         "description": "A vinyl record featuring the album 'Mala Famala'."
@@ -53,7 +53,7 @@
         "id": 8,
         "name": "Vinyl Record - Casino",
         "price": 39.99,
-        "image": "images/products/discoOne.webp",
+        "image": "images/products/discoTwo.webp",
         "description": "A vinyl record featuring the album 'Casino'."
     }
 ]
