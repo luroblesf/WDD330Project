@@ -10,7 +10,8 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style/styles.css">
     <script type="module" src="main.mjs"></script>
-
+    <script src="js/catalog.js" defer></script>
+    <script type="module" src="js/search.js"></script>
 </head>
 
 <body>
@@ -19,11 +20,15 @@
         <section class="pages">
             <h1>Store</h1>
             <p>Welcome to the shopping section. Here you can find our merchandise.</p>
-            <div class="products">
-            </div>
+                    <form id="search-form" class="search-form">
+                        <input type="text" id="search-input" name="query" placeholder="Search products..." required />
+                        <button type="submit">Search</button>
+                    </form>
+            <div class="products"></div>
         </section>
+
     </main>
     <footer id="main-footer"></footer>
-    </body>
+</body>
         
 </html>

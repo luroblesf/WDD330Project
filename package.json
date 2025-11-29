@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "lint": "eslint *.js src/**/*.js",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "test": "jest",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -21,9 +25,11 @@
   "homepage": "https://github.com/luroblesf/WDD330Project#readme",
   "dependencies": {
     "browser-sync": "^3.0.4",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsdom": "^27.2.0"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "vite": "^7.2.4"
   }
 }
