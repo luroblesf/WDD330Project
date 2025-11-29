@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-import products from "./public/products.json" assert { type: "json" };
+const response = await fetch("/products.json");
+;
 
 const container = document.querySelector(".products");
 
