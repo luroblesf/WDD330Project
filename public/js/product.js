@@ -50,3 +50,40 @@ function updateCartCounter(cart) {
         counter.textContent = totalItems;
     }
 }
+
+
+function renderCart(cart) {
+    const cartContainer = document.getElementById("cart-items");
+    if (!cartContainer) return;
+
+    if (cart.length === 0) {
+        cartContainer.innerHTML = "<p>El carrito está vacío</p>";
+        return;
+    }
+
+    cartContainer.innerHTML = cart.map(item => `
+    <div class="cart-item">
+      <img src="${item.image}" alt="${item.name}" width="50"/>
+      <span>${item.name}</span>
+      <span>Quantity: ${item.quantity}</span>
+      <span>Price: $${item.price}</span>
+    </div>
+  `).join("");
+}
+
+btn.addEventListener("click", () => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existing = cart.find(p => p.id == product.id);
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCounter(cart);
+    renderCart(cart);
+});
+
