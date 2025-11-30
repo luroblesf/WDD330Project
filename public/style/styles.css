@@ -307,7 +307,7 @@ input[type="text"]:focus {
 #checkoutSubmit {
     align-self: flex-end;
     padding: 0.8rem 1.6rem;
-    background-color: #616161;
+    background-color: #2F5DD4;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -318,7 +318,7 @@ input[type="text"]:focus {
 
 #checkoutSubmit:hover,
 #checkoutSubmit:focus {
-    background-color: #616161;
+    background-color: #2F5DD4;
     transform: translateY(-2px);
 }
 
@@ -459,7 +459,7 @@ input[type="text"]:focus {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     font-weight: bold;
-    color: #fff;
+    color: white;
     background: #2F5DD4;
     border: none;
     border-radius: 5px;
@@ -480,7 +480,7 @@ input[type="text"]:focus {
   position: absolute;
   top: -9px; 
   right: -9px; 
-  background: rgb(255, 0, 0);
+  background: #F5EA8A;
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -489,7 +489,21 @@ input[type="text"]:focus {
   min-width: 10px;
   text-align: center;
 }
+
  /* Cart Section */
+.page-section {
+    max-width: 900px;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.page-section h3 {
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+}
+
 #cart-items {
     display: flex;
     flex-direction: column;
@@ -501,29 +515,28 @@ input[type="text"]:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    background: white;
+    border: 1px solid #777777;
     border-radius: 8px;
-    padding: 10px 15px;
-    transition: box-shadow 0.2s ease;
- }
+    padding: 50px 50px;
+}
 
 .cart-item:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
  }
 
 .cart-item img {
-    width: 60px;
+    width: 70px;
     height: auto;
     border-radius: 4px;
-    margin-right: 10px;
- }
+    margin-right: 15px;
+}
 
 .cart-item span {
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     margin: 0 8px;
- }
+}
 
 .cart-item button {
     background: #ff6b6b;
@@ -533,8 +546,7 @@ input[type="text"]:focus {
     padding: 6px 12px;
     cursor: pointer;
     font-size: 13px;
-    transition: background 0.2s ease;
- }
+}
 
 .cart-item button:hover {
     background: #e63946;
@@ -545,6 +557,47 @@ input[type="text"]:focus {
     font-weight: bold;
     color: #333;
     font-size: 16px;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.remove-btn {
+    background: black;
+    color: red;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: #cc0000;
+}
+
+#checkout-button {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #2F5DD4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background: #2F5DD4;
+    transform: scale(1.05);
+}
+
+#checkout-button:active {
+    background: #2F5DD4;
+    transform: scale(0.95);
 }
 
 /* Search Bar */
