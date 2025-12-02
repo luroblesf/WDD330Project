@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
     "start": "vite",
     "build": "vite build --emptyOutDir",
     "lint": "eslint *.js src/**/*.js",
@@ -24,13 +25,11 @@
   },
   "homepage": "https://github.com/luroblesf/WDD330Project#readme",
   "dependencies": {
-    "browser-sync": "^3.0.4",
     "express": "^5.2.1",
     "jsdom": "^27.2.0",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1",
-    "vite": "^7.2.4"
+    "vite": "^7.2.6"
   }
 }
