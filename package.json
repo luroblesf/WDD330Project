@@ -25,8 +25,9 @@
   "homepage": "https://github.com/luroblesf/WDD330Project#readme",
   "dependencies": {
     "browser-sync": "^3.0.4",
-    "express": "^5.1.0",
-    "jsdom": "^27.2.0"
+    "express": "^5.2.1",
+    "jsdom": "^27.2.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "lite-server": "^2.6.1",

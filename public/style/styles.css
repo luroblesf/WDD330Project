@@ -657,3 +657,85 @@ input[type="text"]:focus {
         width: 100%;
     }
 }
+
+/* Spotify Artist Card */
+#spotify-artist {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 10px 0;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#spotify-artist h2 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#spotify-artist img {
+    border-radius: 10px;
+    margin: 15px auto;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    max-width: 250px;
+}
+
+#spotify-artist p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #ccc;
+}
+#spotify-artist h3 {
+    margin-top: 20px;
+    color: #fff;
+    border-bottom: 2px solid #1DB954;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+#top-tracks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#top-tracks li {
+    background: #2a2a2a;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top-tracks li strong {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+#top-tracks li audio {
+    margin: 10px 0;
+    width: 1000%;
+}
+
+#top-tracks li iframe {
+    margin-top: 10px;
+    border: none;
+}
+
+#top-tracks li a {
+    margin-top: 8px;
+    color: #1DB954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#top-tracks li a:hover {
+    text-decoration: underline;
+}
