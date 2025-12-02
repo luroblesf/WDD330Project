@@ -7,29 +7,27 @@
     <title>Viento en Contra</title>
     <meta name="author" content="Lucia Robles">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="style/styles.css">
-    <script type="module" src="main.mjs"></script>
-    <script type="module" src="js/cart.js"></script>
-    <script src="js/payment.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/style/styles.css">
+    <script type="module" src="/main.mjs"></script>
+    <script src="/js/cart.js"></script>
+    
+
 </head>
 
 <body>
     <header id="main-header"></header>
-    
-    <main class="divider checkout">
-        <h1>Review & Pay your Order</h1>
-        <section class="checkout-form">
+
+    <main>
+        <section class="pages">
+            <h1>Review & Pay your Order</h1>
             <form name="checkout">
                 <input type="hidden" name="orderDate" id="orderDate" />
-    
                 <fieldset>
                     <legend>Shipping Information</legend>
-    
-                    <div class="checkout__name">
+                        <div class="checkout__name">
                         <label for="fname">First Name</label>
                         <input type="text" name="fname" id="fname" required />
-    
                         <label for="lname">Last Name</label>
                         <input type="text" name="lname" id="lname" required />
                     </div>
@@ -79,6 +77,5 @@
         </section>
     </main>
     <footer id="main-footer"></footer>
-    </body>
-        
+</body>  
 </html>

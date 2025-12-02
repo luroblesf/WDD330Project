@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const numItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    const tax = subtotal * 0.15;             // 15% de impuesto (cámbialo si quieres)
-    const shipping = subtotal >= 50 ? 0 : 6.99;  // Envío gratis desde $50
+    const tax = subtotal * 0.15;           
+    const shipping = subtotal >= 50 ? 0 : 6.99;  
     const total = subtotal + tax + shipping;
 
     numItemsEl.textContent = numItems;

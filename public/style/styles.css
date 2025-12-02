@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px;
+    padding: 5px 15px;
 }
 
 /* Logo */
@@ -105,9 +105,9 @@ p {
 /* Footer */
 #main-footer {
     background-color: #000;
-        color: white;
-        text-align: center;
-        padding: 15px;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
 .footer-content {
@@ -194,6 +194,7 @@ p {
 .gallery p {
     font-size: 15px;
     line-height: 1.5;
+    padding-top: 50px;
 }
 
 /* Payment Section */
@@ -738,4 +739,114 @@ input[type="text"]:focus {
 
 #top-tracks li a:hover {
     text-decoration: underline;
+}
+ 
+/* YouTube Artist Card */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 15px;
+    padding-bottom: 30px;
+}
+
+.video-card {
+    background: #F5EA8A;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.thumb img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+
+.player iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 6px;
+}
+
+h3 {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin: 0.5rem 0;
+}
+
+/*Newsletter style */
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5rem;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2F5DD4;
+    color: #fff;
+    font-size: medium;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2F5DD4;
+    transform: scale(1.05);
+}
+
+#message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #2F5DD4;
+}
+
+/* Confirmation page style */
+#confirm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.2rem;
+}
+
+#confirm a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #2F5DD4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#confirm a:hover {
+     background-color: #1d3c8a;
 }

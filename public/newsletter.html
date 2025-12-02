@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <script type="module" src="main.mjs"></script>
     <script type="module" src="js/product.js"></script>
+    <script src="js/newsletter.js" defer></script>
 
 </head>
 
@@ -19,10 +20,15 @@
     <main>
         <section class="pages">
             <h1>Newsletters</h1>
-            <p>Welcome to the newsletters section. Here you can find our latest updates and news.</p>
+            <p>Get the latest updates and news from our group straight to your inbox.</p>
         </section>
+        <form id="newsletter-form">
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+            <div id="message"></div>
     </main>
     <footer id="main-footer"></footer>
-    </body>
-        
+</body>
 </html>
