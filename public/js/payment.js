@@ -35,11 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const total = totalEl.textContent.replace("$", "");
 
         try {
-            const res = await fetch("http://localhost:3000/api/paypal/orders", {
+            const res = await fetch("http://localhost:5000/api/paypal/create-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ amount: total })
             });
+
+            if (!res.ok) throw new Error("Network response was not ok");
 
             const order = await res.json();
             console.log("Order created:", order);
