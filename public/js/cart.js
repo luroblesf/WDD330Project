@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
             
-            window.location.href = "/public/checkout.html";
+            window.location.href = "/checkout.html";
         });
         return;
     }
