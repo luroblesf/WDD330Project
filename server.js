@@ -38,26 +38,4 @@ router.post("/create-order", async (req, res) => {
     }
 });
 
-router.get("/capture-order/:orderId", async (req, res) => {
-    const { orderId } = req.params;
-
-    try {
-        const response = await axios.post(
-            `https://api-m.sandbox.paypal.com/v2/checkout/orders/${orderId}/capture`,
-            {},
-            {
-                auth: {
-                    username: process.env.PAYPAL_CLIENT_ID,
-                    password: process.env.PAYPAL_SECRET
-                }
-            }
-        );
-
-        res.json(response.data);
-    } catch (error) {
-        console.error("PayPal capture error:", error.response?.data || error);
-        res.status(500).json({ error: "Order capture failed" });
-    }
-});
-
 export default router;

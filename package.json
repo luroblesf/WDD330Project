@@ -19,12 +19,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/luroblesf/WDD330Project/issues"
   },
   "homepage": "https://github.com/luroblesf/WDD330Project#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "jsdom": "^27.2.0",
     "node-fetch": "^3.3.2"
