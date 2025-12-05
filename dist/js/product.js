@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             <h2>${product.name}</h2>
             <p>Price: $${product.price.toFixed(2)}</p>
             <p>${product.description}</p>
-            
             <button id="add-to-cart">Add to Cart</button>
         `;
 
