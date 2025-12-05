@@ -55,5 +55,12 @@
         "price": 39.99,
         "image": "images/products/discoTwo.webp",
         "description": "A vinyl record featuring the album 'Casino'."
+    },
+    {
+        "id": 9,
+        "name": "Ticket Concert",
+        "price": 12.99,
+        "image": "images/products/ticket.webp",
+        "description": "Concert this December 13 at 7pm at Marios Restaurant'."
     }
 ]
