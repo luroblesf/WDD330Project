@@ -6,6 +6,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 dotenv.config();
+console.log("CLIENT ID:", process.env.PAYPAL_CLIENT_ID);
 
 const app = express();
 

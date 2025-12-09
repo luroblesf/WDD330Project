@@ -11,7 +11,7 @@ router.post("/create-order", async (req, res) => {
 
     try {
         const response = await axios.post(
-            "https://api-m.sandbox.paypal.com/v2/checkout/create-orders",
+            "https://api-m.sandbox.paypal.com/v2/checkout/orders",
             {
                 intent: "CAPTURE",
                 purchase_units: [
@@ -33,7 +33,7 @@ router.post("/create-order", async (req, res) => {
 
         res.json(response.data);
     } catch (error) {
-        console.error("PayPal order error:", error);
+        console.error("PayPal order error:", error.response?.data || error);
         res.status(500).json({ error: "Order creation failed" });
     }
 });
